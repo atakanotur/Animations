@@ -7,6 +7,7 @@ import {
   SquareAnimation,
   ColorAnimation,
   LoadingCircleAnimation,
+  Triangles,
 } from '../animations';
 import {NavigationContainer} from '@react-navigation/native';
 
@@ -14,7 +15,7 @@ const Drawer = createDrawerNavigator();
 
 const AnimationNavigator = () => {
   return (
-    <Drawer.Navigator initialRouteName="Loading Circle Animation">
+    <Drawer.Navigator initialRouteName="First Animation">
       <Drawer.Screen name="First Animation" component={MyFirstAnimation} />
       <Drawer.Screen name="Second Animation" component={MySecondAnimation} />
       <Drawer.Screen name="Circle Animation" component={CircleAnimation} />
@@ -24,6 +25,7 @@ const AnimationNavigator = () => {
         name="Loading Circle Animation"
         component={LoadingCircleAnimation}
       />
+      <Drawer.Screen name="Triangles" component={Triangles} />
     </Drawer.Navigator>
   );
 };
